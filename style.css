@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(193, 243, 193);
+    margin: 0%;
+}
+#main{
+    
+    padding:  0px 16px 32px; 
+}
+
+h1{
+    font-size: 64px;
+    color: green;
+    text-align: center;
+   
+    font-family: sans-serif;
+}
+.head span{
+    color: brown;
+}
+.container{
+    background-color: white;
+    max-width: 660px;
+    margin-inline: auto;
+    border-radius: 15px;
+    padding:32px 48px; 
+    box-shadow:0 0 15px 5px rgba(0,0,0, 0.2) ;
+    
+
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+#sun{
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    margin-left: 7px;
+    position: relative;
+  animation-name:rotate;
+  animation-duration: 10s;
+  /* animation-direction: normal; */
+  animation-iteration-count: infinite;
+}
+@media (max-width:768px) {
+    h1{
+        font-size: 32px;
+    }
+    .container{
+        padding: 16px 32px;
+    }
+.goal{
+    height :64px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
+.check-box{
+    width: 20px;
+    height: 20px;
+    
+}
+}
+
+#bar{
+    font-size: 14px;
+    color: rgba(155, 152, 152, 0.753);
+    margin-bottom: 18px;
+}
+.progress-bar{
+    height: 30px;
+    background-color:rgb(194, 191, 191) ;
+    border-radius: 15px;
+
+}
+.progress-value{
+    height:100%;
+    width:0;
+    background-color:rgb(37, 151, 37) ;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* padding-left: 10px;
+    visibility: hidden; */
+    
+    
+    overflow: hidden;
+   transition: width 0.8s ease-in-out ;
+}
+
+.progress-value span{
+    min-width:max-content;
+    padding-left: 15px;
+}
+.error{
+    color: red;
+    font-size: 12px;
+    margin-block:  0px;
+    position: absolute;
+    margin-top: 8px;
+    display:none
+}
+
+.show-error .error{
+    display:block; 
+    
+}
+.goal{
+    border:1px solid rgb(0, 0, 0,0.1);
+    border-radius: 17px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    padding:  0px 22px;
+    margin-bottom: 46px;
+    margin-top: 40px; ;
+    
+    
+}
+.completed .check-box{
+    background: rgb(37, 151, 37);
+    border-color: rgb(37, 151, 37);
+}
+
+.completed .check-icon{
+    display: block;
+}
+
+.completed .input1{
+    color: rgb(37, 151, 37);
+    text-decoration: line-through;
+}
+
+.completed .input1::placeholder{
+    color:  rgb(37, 151, 37);;
+}
+  
+.check-box{
+    height: 24px;
+    width: 24px;
+    border: 2px solid rgb(97,72,28,0.3);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 22px;
+    margin-left: 14px;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.check-icon{
+     display:none;
+} 
+.input1{
+border: none;
+font-family: inherit;
+font-size: 16px;
+outline: none;
+background-color: rgba(253, 251, 251, 0.993);
+flex-grow: 1;
+align-self: stretch;
+font-weight: 500;  
+
+}
+.input1::placeholder{
+    color: rgb(182, 176, 176);
+}
+.qoute{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 64px;
+    font-size: 10px;
+    color: rgb(170, 166, 166);
+}
