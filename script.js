@@ -12,6 +12,8 @@ const allQoutes=[
   'Whoa! You just completed all goals , time for chill :D'
 ]
 
+// hfdtttd,śt
+//jdfultd
 
  const allGoals= JSON.parse(localStorage.getItem('allGoals'))||
 {
